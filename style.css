@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+    --accent-color: #b43434;
+    --light-color: rgb(240, 240, 240);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:hidden ;
+    background: rgb(5,0,24);
+    background: linear-gradient(180deg, rgba(5,0,24,1) 0%, rgba(3,25,71,1) 46%, rgba(35,34,145,1) 100%) no-repeat fixed;
+}
+h1{
+    font-family: 'Lexend', sans-serif;
+    color: var(--secondary-color);
+}
+h3{
+    margin: 0;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'Tittilium Web', sans-serif;
+    font-weight: 100;
+}
+p{
+    font-family: 'Lexend', sans-serif;
+    color: rgb(237, 238, 240);
+}
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+span{
+    cursor: default;
+}
+audio{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* Navbar */
+.header-bg{
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    margin-right: 10px;
+}
+.logo span{
+    font-family: "Playwrite CU", sans-serif;
+    font-size: 1.5rem;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    font-family: Lexend, sans-serif;
+}
+nav ul li{
+    margin: 0;
+    padding: 0 10px;
+    cursor: default;
+}
+nav ul li:hover{
+    color: var(--accent-color);
+}
+nav img{
+    filter: invert(1);
+}
+nav img:hover{
+    scale: 1.1;
+}
+.search img{
+    width: 20px;
+}
+.user img{
+    width: 23px;
+}
+
+/* Card section */
+.master-card{
+    position: relative;
+    top: 105px;
+    height: 600px;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    background-color: rgba(81, 81, 133, 0.616);
+    width: 24.2%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image{
+    background-color: rgb(255, 255, 255);
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgb(83, 83, 83);
+    transition: .2s ease-out;
+}
+.image:hover{
+    scale: 1.05;
+}
+.image img{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+}
+.text{
+    margin: 0 30px;
+    text-align: center;
+}
+.text a{
+    position: relative;
+    top: 20px;
+    border: none;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    transition: .1s ease-out;
+}
+.text a:hover{
+    text-shadow: 0 0 10px white;
+}
+
+/* Artist Page */
+
+/* Marshmellow */
+.container-artist{
+    margin: 0 10%;
+    height: 750px;
+    position: relative;
+    top: 35px;
+}
+.artist-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+.artist-info h1{
+    margin: 0 10%;
+    font-size: 3rem;
+}
+.artist-info p{
+    margin: 2% 10%;
+    font-size: 1.2rem;
+    /* width: 50%; */
+    color: rgb(237, 238, 240);
+}
+.artist-img{
+    /* filter: drop-shadow(0 0 7px white); */
+}
+.artist-img img{
+    border-radius: 50%;
+    filter: drop-shadow(10px 0 7px rgb(137, 142, 189));
+}
+.artist-img img:hover{
+    scale: 1.05;
+}
+.master-songs{
+    display: flex;
+    /* background-color: #b43434; */
+    height: 400px;
+    align-items: center;
+}
+.songs-audio{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    margin-left: 8%;
+}
+.songs-text{
+    width: 300px;
+    height: 350px;
+    text-align: center;
+}
+.songs-text h1{
+    margin: 0;
+    padding: 23px;
+    cursor: default;
+    transition: .2s ease-out;
+}
+.songs-text h1:hover{
+    text-shadow: 0 0 10px white;
+}
+.songs{
+    width: 500px;
+    height: 50px;
+}
+.border{
+    border-bottom: 2px solid white;
+}
+
+
+
+/* 404 Error Page */
+.error-msg{
+    position: relative;
+    top: 110px;
+    margin: 0 10%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error-msg h1{
+    font-size: 9rem;
+    margin: 0;
+}
+.error-msg h2{
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'Tittilium Web', sans-serif;
+    color: white;
+}
+.error-img img{
+    width: 500px;
+}
+.error-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.error-text a{
+    font-family: 'Tittilium Web', sans-serif;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding:5px;
+    transition: .1s ease-out;
+}
+.error-text a:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
