@@ -99,6 +99,7 @@ nav img:hover{
     width: 23px;
 }
 
+
 /* Card section */
 .master-card{
     position: relative;
@@ -174,19 +175,17 @@ nav img:hover{
     /* width: 50%; */
     color: rgb(237, 238, 240);
 }
-.artist-img{
-    /* filter: drop-shadow(0 0 7px white); */
-}
+
 .artist-img img{
     border-radius: 50%;
     filter: drop-shadow(10px 0 7px rgb(137, 142, 189));
+    transition: .2s ease-out;
 }
 .artist-img img:hover{
     scale: 1.05;
 }
 .master-songs{
     display: flex;
-    /* background-color: #b43434; */
     height: 400px;
     align-items: center;
 }

@@ -1,0 +1,40 @@
+@media screen and (max-width: 430px) {
+    /* NAVBAR */
+    .logo img{
+        width: 30px;
+        margin: 0;
+    }
+    .logo span{
+        font-size: 1rem;
+    }
+    nav ul{
+        display: none;
+    }
+    
+    /* ARTIST PAGE */
+    .container-artist{
+        margin: 0;
+        height: 1510px;
+    }
+    .artist-info{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .master-songs{
+        flex-direction: column;
+    }
+    audio{
+        width: 100%;
+    }
+    .songs-audio{
+        margin: 0;
+        align-items: center;
+        gap: 20px;
+        width: auto;
+    }
+    .songs{
+        width: 295px;
+        height: 70px;
+    }
+    
+}
