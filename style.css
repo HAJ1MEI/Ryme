@@ -116,7 +116,11 @@ nav img:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: .2s ease-out;
 }
+.card:hover{
+    scale: 1.03;
+}   
 .image{
     background-color: rgb(255, 255, 255);
     width: 280px;
@@ -126,9 +130,9 @@ nav img:hover{
     box-shadow: 0 0 10px rgb(83, 83, 83);
     transition: .2s ease-out;
 }
-.image:hover{
+/* .image:hover{
     scale: 1.05;
-}
+} */
 .image img{
     width: 270px;
     height: 270px;
